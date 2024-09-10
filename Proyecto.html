@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God of War - Informacion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://scontent.fbaq2-2.fna.fbcdn.net/v/t39.30808-6/320352070_480160557560148_1073605225216450820_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Rwl1J4J1MsAQ7kNvgFGUatt&_nc_ht=scontent.fbaq2-2.fna&oh=00_AYD7z2eDyp7QsMK4TZAoWFcI5xksXAICaaGjV6ynGYd07A&oe=66DB00D6" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <!-- Música de fondo -->
+   <audio id="bg-music" autoplay>
+    <source src="dinamaki.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Botón oculto -->
+<button id="play-music" style="display:none;" onclick="playMusic()">Reproducir música</button>
+
+
+    <header class="mask1">
+        <div class="logo-container">
+            <img src="https://i.pinimg.com/736x/9f/60/f3/9f60f3997b114eced69f2cf5326e98bd.jpg" alt="God of War Logo" class="logo">
+        </div>
+        <h1>God of War</h1>
+        <nav>
+            <ul>
+                <li><a href="historia.html" class="button-section">Historia</a></li>
+                <li><a href="Olimpo.html" class="button-section">Olimpo</a></li>
+                <li><a href="Galeria.html" class="button-section">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="personajes">
+        <h2>Personajes Principales</h2>
+        <div id="theCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#theCarousel" data-slide-to="1"></li>
+                <li data-target="#theCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active kratos">
+                    <a href="Kratos.html"><img src="https://i.pinimg.com/564x/2d/fa/4b/2dfa4bc0e5b77e65da299507f1796a49.jpg" alt="Kratos"></a>
+                    <div class="carousel-caption">
+                        <h3>Kratos</h3>
+                        <p>Ver mas...</p>
+                    </div>
+                </div>
+                <div class="item atreus">
+                    <a href="Atreus.html"><img src="https://static.wikia.nocookie.net/godofwar/images/d/db/Fl0Q_n3WIAs50X7.jpeg/revision/latest/scale-to-width-down/250?cb=20230107095711" alt="Atreus"></a>
+                    <div class="carousel-caption">
+                        <h3>Atreus</h3>
+                        <p>Ver mas...</p>
+                    </div>
+                </div>
+                <div class="item imagen-personalizada">
+                    <a href="Faye.html"><img src="https://pbs.twimg.com/media/FnUEz8uXgAAHDYk.jpg:large" alt="Imagen personalizada"></a>
+                    <div class="carousel-caption">
+                        <h3>Faye</h3>
+                        <p>Ver mas...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="mask2">
+        <p>&copy; 2024 Página de fans de God of War.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #f5f5f5;
+    background-image: url('https://images5.alphacoders.com/130/thumb-1920-1304607.jpeg');
+    background-position: cover;
+    background-size: cover;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-attachment: fixed; /* Hace que el fondo se mantenga fijo */
+}
+
+.mask1 {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+
+.mask2 {
+    -webkit-mask-image: linear-gradient(to top, black, transparent);
+    mask-image: linear-gradient(to top, black, transparent);
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header.transparent {
+    background-color: rgba(0, 0, 0, 0); /* Color transparente */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.button-section {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.button-section:hover {
+    transform: scale(1.1);
+    background: rgba(235, 6, 6, 0.9);
+}
+
+.button-section h2 {
+    margin: 0;
+}
+
+.button-section p {
+    margin: 10px 0 0;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.kratos, .atreus, .imagen-personalizada {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    animation: spiral 10s infinite linear;
+}
+
+.kratos img, .atreus img, .imagen-personalizada img {
+    width: 25%;
+    margin: auto;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.kratos img:hover, .atreus img:hover, .imagen-personalizada img:hover {
+    filter: grayscale(100%);
+    transform: scale(0.9);
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.logo.transparent {
+    opacity: 0; /* Logo transparente */
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 25%;
+    margin: auto;
+}
+
+
+</style>
